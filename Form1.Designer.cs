@@ -29,20 +29,32 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.buttonHello = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Location = new System.Drawing.Point(200, 300);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(800, 376);
+            this.label1.Size = new System.Drawing.Size(150, 150);
             this.label1.TabIndex = 1;
             this.label1.Text = "Hello .NET Core!";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(800, 376);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "EF";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // buttonExit
             // 
@@ -72,6 +84,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonHello);
             this.Name = "Form1";
@@ -83,6 +96,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonHello;
         private System.Windows.Forms.Button buttonExit;
     }
